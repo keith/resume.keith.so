@@ -24,6 +24,14 @@ module.exports = function(grunt) {
             src: 'bower_components/bootstrap/dist/css/bootstrap.min.css',
             dest: 'sass/_bootstrap.scss'
           },
+          {
+            src: '*.html',
+            dest: 'build/'
+          },
+          {
+            src: 'robots.txt',
+            dest: 'build/'
+          },
         ]
       }
     },
