@@ -11,5 +11,9 @@
     "url": "ssh://git@bitbucket.org/SmileyKeith/resume.git"
   },
   "author": "Keith Smiley",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-bower-task": "~0.3.2",
+    "grunt": "~0.4.1"
+  }
 }
