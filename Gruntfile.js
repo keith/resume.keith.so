@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       main: {
         files: [
           {
-            src: 'bower_components/jquery/jquery.js',
+            src: 'bower_components/jquery/jquery.min.js',
             dest: 'build/js/jquery.js'
           },
           {
@@ -23,6 +23,10 @@ module.exports = function(grunt) {
           {
             src: 'bower_components/bootstrap/dist/css/bootstrap.min.css',
             dest: 'sass/_bootstrap.scss'
+          },
+          {
+            src: 'bower_components/FitText.js/jquery.fittext.js',
+            dest: 'build/js/fittext.js'
           },
           {
             src: '*.html',
@@ -47,6 +51,12 @@ module.exports = function(grunt) {
       }
     },
 
+    jekyll: {
+      dist: {
+        dest: './build'
+      }
+    },
+
     watch: {
       files: ['*.html', 'sass/*'],
       tasks: ['default']
@@ -57,7 +67,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-jekyll');
 
-  grunt.registerTask('default', ['bower', 'copy', 'sass']);
+  grunt.registerTask('default', ['bower', 'jekyll', 'copy', 'sass']);
 }
 
