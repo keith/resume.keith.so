@@ -1,0 +1,15 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "My HTML Resume",
+  "main": "index.html",
+  "scripts": {
+    "preinstall": "npm install -g bower grunt-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.org/SmileyKeith/resume.git"
+  },
+  "author": "Keith Smiley",
+  "license": "MIT"
+}
