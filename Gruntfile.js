@@ -27,11 +27,23 @@ module.exports = function(grunt) {
         ]
       }
     },
+
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          'build/css/main.css': 'sass/main.scss',
+        }
+      }
+    },
   });
 
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('default', ['bower']);
+  grunt.registerTask('default', ['bower', 'copy', 'sass']);
 }
 
