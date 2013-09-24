@@ -18,4 +18,6 @@ node_modules
 ##### Custom #####
 bower_components
 build
+.sass-cache
+sass/_bootstrap.scss
 
