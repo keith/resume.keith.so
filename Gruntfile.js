@@ -46,11 +46,17 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    watch: {
+      files: ['*.html', 'sass/*'],
+      tasks: ['default']
+    },
   });
 
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['bower', 'copy', 'sass']);
 }
