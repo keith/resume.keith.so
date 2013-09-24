@@ -1,0 +1,5 @@
+name: Keith Smiley
+markdown: redcarpet
+destination: ./build
+exclude: ['bower_components', 'bower.json', 'Gruntfile.js', 'node_modules', 'sass']
+
