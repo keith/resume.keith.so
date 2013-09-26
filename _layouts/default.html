@@ -6,10 +6,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Keith Smiley</title>
+    {% if page.title %}
+      <title>{{ site.name }} - {{ page.title }}</title>
+    {% else %}
+      <title>{{ site.name }}</title>
+    {% endif %}
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -23,7 +28,7 @@
     <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
     <script src="/js/fittext.js"></script>
     <script>
-      jQuery("#responsive_headline").fitText();
+      jQuery("#header").fitText();
     </script>
   </body>
 </html>
