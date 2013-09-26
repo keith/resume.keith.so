@@ -28,14 +28,6 @@ module.exports = function(grunt) {
             src: 'bower_components/FitText.js/jquery.fittext.js',
             dest: 'build/js/fittext.js'
           },
-          {
-            src: '*.html',
-            dest: 'build/'
-          },
-          {
-            src: 'robots.txt',
-            dest: 'build/'
-          },
         ]
       }
     },
