@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['*.html', 'sass/*'],
+      files: ['**/*.html', 'sass/*'],
       tasks: ['default']
     },
   });
@@ -61,6 +61,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jekyll');
 
-  grunt.registerTask('default', ['bower', 'jekyll', 'copy', 'sass']);
+  grunt.registerTask('default', ['jekyll', 'copy', 'sass']);
 }
 
