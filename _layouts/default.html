@@ -17,18 +17,25 @@
     <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body>
+  <body class="container">
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     {{ content }}
 
+    <div class="footer sixteen columns">
+      <a href="#">1</a>
+      <a href="#">1</a>
+      <a href="#">1</a>
+      <a href="#">1</a>
+    </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
     <script src="/js/fittext.js"></script>
     <script>
-      jQuery("#header").fitText();
+      jQuery("#header").fitText(1.0, { minFontSize: '40px', maxFontSize: '100px'});
     </script>
   </body>
 </html>
