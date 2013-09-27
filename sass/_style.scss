@@ -1,10 +1,13 @@
-$border-color: #ddd;
 $text-color: #333;
-$link-color: #111;
-$green: #2ECC71;
-$purple: #A086D3;
-$blue: #00ACEE;
-$red: #E74C3C;
+$link-color: #000;
+$border-color: #ddd;
+
+$sail: #8C8C8C;
+$bartlett: #2ABF6A;
+$opensource: #A086D3;
+$cocoapods: #D26824;
+$winthrop: #F9C331;
+$facts: #005A9B;
 
 body {
   color: $text-color;
@@ -53,11 +56,27 @@ hr {
 }
 
 #OpenSource {
-  color: $purple;
+  color: $opensource;
 }
 
 #Bartlett {
-  color: $green;
+  color: $bartlett;
+}
+
+#Sail {
+  color: $sail;
+}
+
+#Cocoapods {
+  color: $cocoapods;
+}
+
+#School {
+  color: $winthrop;
+}
+
+#FunFacts {
+  color: $facts;
 }
 
 .links-container {
