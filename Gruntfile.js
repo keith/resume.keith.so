@@ -17,12 +17,8 @@ module.exports = function(grunt) {
             dest: 'build/js/jquery.js'
           },
           {
-            src: 'bower_components/bootstrap/dist/js/bootstrap.min.js',
-            dest: 'build/js/bootstrap.min.js'
-          },
-          {
-            src: 'bower_components/bootstrap/dist/css/bootstrap.min.css',
-            dest: 'sass/_bootstrap.scss'
+            src: 'bower_components/normalize-css/normalize.css',
+            dest: 'sass/_normalize.scss'
           },
           {
             src: 'bower_components/FitText.js/jquery.fittext.js',
@@ -53,8 +49,11 @@ module.exports = function(grunt) {
       files: ['**/*.html', 'sass/*'],
       tasks: ['default']
     },
+
+    clean: ['build', 'sass/_normalize.scss'],
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');

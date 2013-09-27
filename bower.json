@@ -15,8 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.0.0",
     "FitText.js": "*",
-    "jquery": "~2.0.3"
+    "jquery": "~2.0.3",
+    "normalize-css": "~2.1.3"
   }
 }
