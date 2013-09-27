@@ -2,7 +2,36 @@
 layout: default
 ---
 
-<header class="row">
-  <h1 class="col-md-12" id="header">{{ site.name }}</h1>
-</header>
+<div class="sixteen columns">
+  <h1 id="header">{{ site.name }}</h1>
+</div>
+
+<hr class="sixteen columns">
+
+<!-- <div class="jobs"> -->
+<!--   {% for job in site.jobs %} -->
+<!--     {% for element in job %} -->
+<!--       {% if forloop.index == 1 %} -->
+<!--         {% assign title = element %} -->
+<!--       {% else %} -->
+<!--         {% assign desc = element %} -->
+<!--       {% endif %} -->
+<!--     {% endfor %} -->
+
+<!--     <1!-- {{ title }} :: {{ desc }} --1> -->
+<!--   {% endfor %} -->
+<!-- </div> -->
+
+<div class="jobs sixteen columns">
+  {% for post in site.posts %}
+    <div class="job sixteen columns">
+      <div class="title three columns">
+        <h1>{{ post.title }}</h1>
+      </div>
+      <div class="description twelve columns">
+        {{ post.content | markdownify }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
