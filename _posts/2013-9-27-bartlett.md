@@ -9,5 +9,5 @@ serves as a quick reference guide for employees in the field and allows
 representatives to quickly and easily diagnose the disease or pest that
 is causing plant failure. I been working as the soul developer on the
 project for almost two years requiring me to manage the entire
-development cycle while supporting all the way back to iOS 5.
+development cycle while supporting iOS 5 and up.
 
