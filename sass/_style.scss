@@ -35,6 +35,21 @@ ul {
   font-size: 60px;
   text-align: center;
   margin: 0 auto 10px;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#email {
+  display: none;
+  font-size: 1.3em;
+  margin-top: 0;
+  text-align: center;
 }
 
 hr {

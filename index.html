@@ -3,8 +3,10 @@ layout: default
 ---
 
 <div class="sixteen columns">
-  <h1 id="header">{{ site.name }}</h1>
+  <h1 id="header"><a href="mailto:{{ site.email }}?subject=Hello">{{ site.name }}</a></h1>
 </div>
+
+<h3 class="sixteen columns" id="email">{{ site.email }}</h3>
 
 <hr class="sixteen columns">
 

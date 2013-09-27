@@ -1,4 +1,5 @@
 name: Keith Smiley
+email: keithbsmiley@gmail.com
 markdown: redcarpet
 destination: ./build
 exclude: ['bower_components', 'bower.json', 'Gruntfile.js', 'node_modules', 'sass']
