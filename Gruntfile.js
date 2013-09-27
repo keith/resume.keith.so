@@ -57,7 +57,19 @@ module.exports = function(grunt) {
     clean: {
       build: ['build', 'sass/_normalize.scss'],
       release: ['build/2013']
-    }
+    },
+
+
+    rsync: {
+      dist: {
+        options: {
+          args: ['-avz', '--delete'],
+          src : 'build/',
+          dest: '/srv/www/keith.so/resume',
+          host: 'ksmiley@66.175.208.254',
+        }
+      }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -66,7 +78,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-rsync');
 
   grunt.registerTask('default', ['jekyll', 'copy', 'sass']);
+  grunt.registerTask('deploy', ['clean:build', 'default', 'clean:release', 'rsync']);
 }
 
