@@ -54,7 +54,10 @@ module.exports = function(grunt) {
       tasks: ['default']
     },
 
-    clean: ['build', 'sass/_normalize.scss'],
+    clean: {
+      build: ['build', 'sass/_normalize.scss'],
+      release: ['build/2013']
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
