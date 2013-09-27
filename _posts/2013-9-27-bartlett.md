@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bartlett
+index: 2
 ---
 
 luctus urna sed urna ultricies ac tempor dui sagittis. In

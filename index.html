@@ -9,15 +9,19 @@ layout: default
 <hr class="sixteen columns">
 
 <div class="sixteen columns">
-  {% for post in site.posts %}
-    <div class="job sixteen columns">
-      <div class="title three columns">
-        <h2 id="{{ post.title }}">{{ post.title }}</h2>
-      </div>
-      <div class="description twelve columns">
-        {{ post.content | markdownify }}
-      </div>
-    </div>
+  {% for i in (1..site.posts.size) %}
+    {% for post in site.posts %}
+      {% if post.index == i %}
+        <div class="job sixteen columns">
+          <div class="three columns">
+            <h2 class="title" id="{{ post.title }}">{{ post.title }}</h2>
+          </div>
+          <div class="description twelve columns">
+            {{ post.content | markdownify }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 </div>
 
