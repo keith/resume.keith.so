@@ -13,10 +13,10 @@ layout: default
     {% for post in site.posts %}
       {% if post.index == i %}
         <div class="job sixteen columns">
-          <div class="three columns">
-            <h2 class="title" id="{{ post.title }}">{{ post.title }}</h2>
+          <div class="four columns">
+            <h2 class="title" id="{{ post.title | camelize }}">{{ post.title }}</h2>
           </div>
-          <div class="description twelve columns">
+          <div class="description eleven columns">
             {{ post.content | markdownify }}
           </div>
         </div>
