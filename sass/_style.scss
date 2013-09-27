@@ -40,7 +40,7 @@ hr {
 .job {
   margin: 20px auto 0;
 
-  .title h2 {
+  .title {
     font-size: 2em;
     font-weight: 800;
     text-align: right;
@@ -65,7 +65,7 @@ hr {
   margin: 40px auto 0;
 }
 
-.footer {
+#footer {
   margin: 30px auto;
   opacity: 0.75;
   text-align: center;
@@ -81,7 +81,7 @@ hr {
 
 @media only screen and (max-width: 767px) {
   .job {
-    .title h2 {
+    .title {
       font-size: 1.7em;
       text-align: center;
     }
