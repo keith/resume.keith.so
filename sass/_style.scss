@@ -1,15 +1,64 @@
-body {
-  // font-family: 'Open Sans', sans-serif;
-  // font-weight: 800;
-  font-family: 'Abril Fatface', cursive;
-  width: 100%;
-}
+$border-color: #ddd;
 
-header {
-  text-align: center;
+body {
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 #header {
-  font-family: 'Abril Fatface';
+  font-family: 'Abril Fatface', 'Georgia', serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $border-color;
+  height: 0;
+  margin-bottom: 20px;
+}
+
+.job {
+  margin: 20px auto 0;
+
+  .title h2 {
+    font-size: 2em;
+    font-weight: 800;
+    text-align: right;
+  }
+
+  .description {
+    border-left: 1px solid $border-color;
+    padding-left: 10px;
+  }
+}
+
+.links-container {
+  text-align: center;
+  margin: 40px auto 0;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .job {
+    .title h2 {
+      font-size: 1.7em;
+      text-align: center;
+    }
+
+    .description {
+      border-left: none;
+      border-bottom: 1px solid $border-color;
+      padding: 0;
+    }
+  }
 }
 
