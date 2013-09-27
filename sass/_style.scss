@@ -1,4 +1,8 @@
 $border-color: #ddd;
+$green: #2ECC71;
+$purple: #A086D3;
+$blue: #00ACEE;
+$red: #E74C3C;
 
 body {
   color: #222;
@@ -35,6 +39,14 @@ hr {
     border-left: 1px solid $border-color;
     padding-left: 10px;
   }
+}
+
+#Github {
+  color: $purple;
+}
+
+#Bartlett {
+  color: $green;
 }
 
 .links-container {

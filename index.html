@@ -12,7 +12,7 @@ layout: default
   {% for post in site.posts %}
     <div class="job sixteen columns">
       <div class="title three columns">
-        <h2>{{ post.title }}</h2>
+        <h2 id="{{ post.title }}">{{ post.title }}</h2>
       </div>
       <div class="description twelve columns">
         {{ post.content | markdownify }}
