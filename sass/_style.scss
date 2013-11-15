@@ -7,7 +7,8 @@ $bartlett: #2ABF6A;
 $opensource: #A086D3;
 $cocoapods: #D26824;
 $winthrop: #F9C331;
-$facts: #005A9B;
+$facts: #ef4423;
+$work: #3b5998;
 
 body {
   color: $text-color;
@@ -98,6 +99,10 @@ hr {
 
 #FunFacts {
   color: $facts;
+}
+
+#WorkExperience {
+  color: $work;
 }
 
 .links-container {
