@@ -26,6 +26,10 @@ ul {
   list-style-type: circle;
 }
 
+ul ul {
+  list-style-type: none;
+}
+
 #header {
   font-family: 'Abril Fatface', 'Georgia', serif;
   font-weight: 400;
@@ -101,7 +105,7 @@ hr {
   color: $facts;
 }
 
-#WorkExperience {
+#WorkHistory {
   color: $work;
 }
 
