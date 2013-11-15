@@ -14,7 +14,7 @@ layout: default
   {% for i in (1..site.posts.size) %}
     {% for post in site.posts %}
       {% if post.index == i %}
-        <div class="job sixteen columns">
+        <div class="job sixteen columns" id="{{ post.title | camelize }}Job">
           <div class="four columns">
             <h2 class="title" id="{{ post.title | camelize }}">{{ post.title }}</h2>
           </div>
