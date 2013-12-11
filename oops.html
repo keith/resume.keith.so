@@ -1,16 +1,14 @@
 ---
-layout: default
+layout: none
 ---
 
-<div class="sixteen columns">
-  <h4 id="error">Looks like you hit a broken link, I'm sending you home</h4>
-</div>
+{% comment %} <div class="sixteen columns"> {% endcomment %}
+{% comment %}   <h4 id="error">Looks like you hit a broken link, I'm sending you home</h4> {% endcomment %}
+{% comment %} </div> {% endcomment %}
 
-<hr class="sixteen columns">
+{% comment %} <hr class="sixteen columns"> {% endcomment %}
 
 <script type="text/javascript">
-  setTimeout(function () {
-    window.location.href = '/';
-  }, 2500);
+  window.location.href = '/';
 </script>
 
