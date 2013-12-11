@@ -65,7 +65,7 @@ module.exports = function(grunt) {
         options: {
           args: ['-avz', '--delete'],
           src : 'build/',
-          dest: '/srv/www/keith.so/resume',
+          dest: '/sites/keith.so/resume',
           host: 'ksmiley@66.175.208.254',
         }
       }
