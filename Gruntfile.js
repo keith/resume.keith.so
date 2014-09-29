@@ -62,7 +62,7 @@ module.exports = function(grunt) {
     gitDir: "gh-pages",
     shell: {
       clone: {
-        command: 'git clone --branch gh-pages https://github.com/Keithbsmiley/keith.so.git <%= gitDir %>'
+        command: 'git clone --branch gh-pages https://github.com/Keithbsmiley/resume.keith.so.git <%= gitDir %>'
       },
       empty: {
         command: 'rm -rf <%= gitDir %>/*'
