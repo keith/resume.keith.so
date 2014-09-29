@@ -59,17 +59,28 @@ module.exports = function(grunt) {
       release: ['build/2013']
     },
 
-
-    rsync: {
-      dist: {
-        options: {
-          args: ['-avz', '--delete'],
-          src : 'build/',
-          dest: '/sites/keith.so/resume',
-          host: 'ksmiley@66.175.208.254',
-        }
+    gitDir: "gh-pages",
+    shell: {
+      clone: {
+        command: 'git clone --branch gh-pages https://github.com/Keithbsmiley/keith.so.git <%= gitDir %>'
+      },
+      empty: {
+        command: 'rm -rf <%= gitDir %>/*'
+      },
+      move: {
+        command: 'mv build/* <%= gitDir %>'
+      },
+      commit: {
+        command: 'cd <%= gitDir %>; git add --all; git commit -m "`date`"; true'
       }
-    },
+      // ,
+      // push: {
+      //   command: 'cd <%= gitDir %>; git push'
+      // },
+      // clean: {
+      //   command: 'rm -rf <%= gitDir %>'
+      // }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -78,7 +89,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-rsync');
+  grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('default', ['jekyll', 'copy', 'sass']);
   grunt.registerTask('deploy', ['clean:build', 'default', 'clean:release', 'rsync']);
