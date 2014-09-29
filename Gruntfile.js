@@ -92,6 +92,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('default', ['jekyll', 'copy', 'sass']);
-  grunt.registerTask('deploy', ['clean:build', 'default', 'clean:release', 'rsync']);
+  grunt.registerTask('deploy', ['clean:build', 'default', 'clean:release', 'shell']);
 }
 
