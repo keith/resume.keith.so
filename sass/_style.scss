@@ -2,6 +2,7 @@ $text-color: #333;
 $link-color: #000;
 $border-color: #ddd;
 
+$thoughtbot: #C52D2F;
 $sail: #8C8C8C;
 $bartlett: #2ABF6A;
 $opensource: #A086D3;
@@ -81,6 +82,10 @@ hr {
   }
 }
 
+#Thoughtbot {
+  color: $thoughtbot;
+}
+
 #OpenSource {
   color: $opensource;
 }
@@ -135,4 +140,3 @@ hr {
     }
   }
 }
-
