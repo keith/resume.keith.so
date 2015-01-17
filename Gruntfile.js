@@ -21,10 +21,6 @@ module.exports = function(grunt) {
             dest: 'sass/_normalize.scss'
           },
           {
-            src: 'bower_components/skeleton/stylesheets/skeleton.css',
-            dest: 'sass/_skeleton.scss'
-          },
-          {
             src: 'bower_components/FitText.js/jquery.fittext.js',
             dest: 'build/js/fittext.js'
           },
@@ -93,5 +89,4 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['jekyll', 'copy', 'sass']);
   grunt.registerTask('deploy', ['clean:build', 'default', 'clean:release', 'shell']);
-}
-
+};
