@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 
     clean: {
       build: ['build', 'sass/_normalize.scss'],
-      release: ['build/2013']
+      release: ['build/2013', 'build/2014']
     },
 
     gitDir: "gh-pages",
