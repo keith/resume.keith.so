@@ -57,6 +57,9 @@ module.exports = function(grunt) {
 
     gitDir: "gh-pages",
     shell: {
+      remove: {
+        command: 'rm -rf <%= gitDir %>'
+      },
       clone: {
         command: 'git clone --branch gh-pages https://github.com/Keithbsmiley/resume.keith.so.git <%= gitDir %>'
       },
@@ -68,14 +71,13 @@ module.exports = function(grunt) {
       },
       commit: {
         command: 'cd <%= gitDir %>; git add --all; git commit -m "`date`"; true'
+      },
+      push: {
+        command: 'cd <%= gitDir %>; git push'
+      },
+      clean: {
+        command: 'rm -rf <%= gitDir %>'
       }
-      // ,
-      // push: {
-      //   command: 'cd <%= gitDir %>; git push'
-      // },
-      // clean: {
-      //   command: 'rm -rf <%= gitDir %>'
-      // }
     }
   });
 
