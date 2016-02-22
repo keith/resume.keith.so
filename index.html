@@ -11,7 +11,7 @@ layout: default
 <hr class="sixteen columns">
 
 <div class="sixteen columns">
-  {% for i in (1..site.posts.size) %}
+  {% for i in (1..100) %}
     {% for post in site.posts %}
       {% if post.index == i %}
         <div class="job sixteen columns" id="{{ post.title | camelize }}Job">

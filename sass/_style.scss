@@ -2,6 +2,7 @@ $text-color: #333;
 $link-color: #000;
 $border-color: #ddd;
 
+$lyft: #EA0B8C;
 $thoughtbot: #C52D2F;
 $sail: #8C8C8C;
 $bartlett: #2ABF6A;
@@ -80,6 +81,10 @@ hr {
     border-left: 1px solid $border-color;
     padding-left: 10px;
   }
+}
+
+#Lyft {
+  color: $lyft;
 }
 
 #Thoughtbot {

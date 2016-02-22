@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source
-index: 4
+index: 25
 ---
 
 While working on my iOS and OS X projects, I have followed the [Open

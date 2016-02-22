@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CocoaPods
-index: 5
+index: 30
 ---
 
 [CocoaPods](http://cocoapods.org/) is a Ruby based tool for managing 3rd
