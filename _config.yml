@@ -2,4 +2,4 @@ name: Keith Smiley
 email: keithbsmiley@gmail.com
 markdown: redcarpet
 destination: ./build
-exclude: ["bower_components", "Gruntfile.js", "node_modules", "sass", "*.json", "*.log", "README.md"]
+exclude: ["sass", "README.md", "gh-pages", "Gemfile*", "Makefile"]
