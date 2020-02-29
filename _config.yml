@@ -1,5 +1,5 @@
 name: Keith Smiley
 email: keithbsmiley@gmail.com
-markdown: redcarpet
+markdown: kramdown
 destination: ./build
 exclude: ["sass", "README.md", "gh-pages", "Gemfile*", "Makefile"]
