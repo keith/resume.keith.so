@@ -1,16 +1,9 @@
 $text-color: #333;
-$link-color: #000;
 $border-color: #ddd;
 
 $lyft: #EA0B8C;
-$thoughtbot: #C52D2F;
-$sail: #8C8C8C;
-$bartlett: #2ABF6A;
+$bazel: #5A994F;
 $opensource: #A086D3;
-$cocoapods: #D26824;
-$winthrop: #F9C331;
-$facts: #ef4423;
-$work: #3b5998;
 
 body {
   color: $text-color;
@@ -20,16 +13,12 @@ body {
 }
 
 a {
-  color: $link-color;
+  color: #000;
   text-decoration: underline;
 }
 
 ul {
   list-style-type: circle;
-}
-
-ul ul {
-  list-style-type: none;
 }
 
 #header {
@@ -50,7 +39,6 @@ ul ul {
 }
 
 #email {
-  display: none;
   font-size: 1.3em;
   margin-top: 0;
   text-align: center;
@@ -87,36 +75,27 @@ hr {
   color: $lyft;
 }
 
-#Thoughtbot {
-  color: $thoughtbot;
+#Bazel {
+  color: $bazel;
+}
+
+#Mnf {
+  color: #df6042;
 }
 
 #OpenSource {
   color: $opensource;
 }
 
-#Bartlett {
-  color: $bartlett;
+#Experience {
+  color: #3b5998;
 }
 
-#Sail {
-  color: $sail;
+#Talks {
+  color: #c52d2f;
 }
 
-#Cocoapods {
-  color: $cocoapods;
-}
-
-#School {
-  color: $winthrop;
-}
-
-#FunFacts {
-  color: $facts;
-}
-
-#WorkHistory {
-  color: $work;
+#Podcasts {
 }
 
 .links-container {
