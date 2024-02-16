@@ -3,7 +3,7 @@ PAGES_DIR=$(PWD)/gh-pages
 
 .PHONY: sass jekyll deploy
 
-sass: jekyll
+sass:
 	mkdir -p $(BUILD_DIR)/css
 	bundle exec sass --style compressed sass/main.scss $(BUILD_DIR)/css/main.css
 
@@ -13,6 +13,7 @@ jekyll:
 deploy:
 	rm -rf $(BUILD_DIR)
 	rm -rf $(PAGES_DIR)
+	$(MAKE) jekyll
 	$(MAKE) sass
 	rm -rf $(BUILD_DIR)/20*
 	git clone --branch gh-pages https://github.com/keith/resume.keith.so.git $(PAGES_DIR)
