@@ -5,3 +5,4 @@ destination: ./build
 exclude: ["README.md", "gh-pages", "Gemfile*", "Makefile"]
 sass:
   style: compressed
+  sourcemap: never
